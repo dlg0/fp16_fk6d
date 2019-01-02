@@ -1,0 +1,65 @@
+\section{Related work}\label{sec:related}
+
+% Start with text from SC18 paper
+Iterative refinement is a well-established technique that dates back to
+Wilkinson in the 1940s. The idea is to improve the computed solution of a
+linear system by solving a correction equation and adding the
+correction to the original solution; see Wilkinson \cite{Wilkinson_1963},
+Moler~\cite{Moler_1967_jacm}, Stewart~\cite{Stewart_1973},
+Demmel~\cite{Demmel_1997})
+and, for a comprehensive treatment, Higham~\cite[Chap.~12]{Higham_2002}.
+In iterative refinement, the three tasks (original solve/factorization,
+residual computation, and correction equation solve) can be done in the
+same precision (fixed precision) or in different precisions (mixed
+precision). Fixed precision iterative refinement was analyzed by
+Skeel~\cite{Skeel80} for an LU solver and extended by
+Higham~\cite{Higham1991}, \cite{high97i} for a general solver. In the 2000s, motivated by
+processors equipped with \fsp speed 2$\times$ that of \fdp, mixed precision
+iterative refinement---with the LU factorization done in \fsp and
+everything else done in \fdp---was explored
+in~\cite{Langou_2006_sc,Buttari_2007_sc}.
+
+Replacing the direct triangular solves of the correction equation with an
+iterative method,
+as suggested in \cite{carson2017new} in a mixed precision context,
+leads to ``nesting'' of two iterative methods, which in general
+are called ``inner--outer'' iterations, the latter having been studied both
+theoretically and
+computationally~\cite{golub00inexact,saad91flexible,flexible-inner-outer},
+including in mixed-precision computation
+scenarios~\cite{BaboulinBDKLLLT09}.
+Recently, Carson and Higham~\cite{carson2017accelerating,carson2017new}
+analyzed the convergence property of a three precision iterative refinement scheme
+(factorization precision, working precision, residual precision) and concluded that
+if the condition number of $A$ is not too large,
+$\kappa_\infty(A) = \normo{A}\normo{A^{-1}}<10^4$,
+then using
+\fhp for the $O(n^3)$ portion (the LU factorization)
+and (\fsp, \fdp) or (\fdp, \fqp)
+as the (working, residual) precision for
+the $O(n^2)$ portion (refinement loop),
+one can expect to achieve
+forward error and
+backward error  on the order of $10^{-8}$ and $10^{-16}$ respectively.
+%                                                     
+We note that, if $\hat{x}$ is the solution of $Ax=b$
+the forward error is defined by $\Vert \hat{x} - x \Vert_\infty/\Vert x \Vert_\infty$
+and the backward error is defined by 
+$\Vert r \Vert_{2} / \Vert A \Vert_{2} \Vert \hat{x} \Vert_{2}$ where $r=b-A\hat{x}$.
+%                                                           
+The same study also showed that when using the generalized minimal residual
+(GMRES) method preconditioned by the \fhp LU factorization
+as the refinement procedure, the
+constraint on the condition number can be relaxed to be
+$\kappa_\infty(A)<10^8$ when the (working, residual) precision is (\fsp, \fdp)
+and to $10^{12}$ when the (working, residual) precision is (\fdp, \fqp).
+
+An investigation of similar iterative refinement methods
+on earlier generations of GPUs can be found in~\cite{Haidar2017}.
+With the
+announcement of NVIDIA's V100 Tensor Cores. which improve
+numerical precision and speed for \fhp, it is our
+intention to comprehensively investigate how the V100 opens a
+new world of opportunities in matrix computations.
+
+Recently~\cite{Haidar2018}

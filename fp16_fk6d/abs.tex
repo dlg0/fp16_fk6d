@@ -1,0 +1,20 @@
+\begin{abstract}
+While many scientific computing applications require 64-bit
+floating-point (FP64) arithmetic and accuracy, commodity 
+hardware like GPUs now support FP16 operations
+that are up to $16\times$ faster than FP64. This raises a
+significant interest in the development of mixed-precision 
+methods that can boost significantly performance
+while maintaining FP64 accuracy. We present a mixed-precision
+methodology that uses a combination of FP16, FP32, and FP64 operations to achieve this for real-world applications. 
+Namely, the developments are for a scientific application 
+using  a Discontinuous-Galerkin (DG) 
+finite element solver based on a hierarchical sparse-grid
+discretization. As with any other DG solver, an implicit time
+advance (here Backward Euler) requires a matrix factorization. 
+The new FP16-FP32-FP64 solver uses a mixed FP16-FP32 precision
+factorization and a FP64 iterative process, preconditined with 
+the mixed-precision factorization, that yields FP64 accuracy.  
+Results on latest GPUs are presented, illustrating 
+a significant, up to $4\times$, speedup and FP64 accuracy.
+\end{abstract}

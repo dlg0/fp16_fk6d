@@ -1,0 +1,100 @@
+\documentclass[runningheads]{llncs}
+\usepackage{makeidx}  % allows for indexgeneration
+
+%\usepackage{mathptmx}
+\usepackage[scaled=0.91]{helvet}
+\usepackage{courier}
+
+%\usepackage[nocompress]{cite}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage[caption=false,font=footnotesize]{subfig}
+%\usepackage{algorithmic}
+%\usepackage[plain]{algorithm}
+%\usepackage{amsmath,amssymb}
+
+\usepackage{tabularx}
+
+\usepackage[vlined,boxed,commentsnumbered]{algorithm2e}
+\usepackage{wrapfig}
+
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[obeyspaces]{url}
+\urlstyle{sf}
+\usepackage[breaklinks,colorlinks,linkcolor=DarkGreen,citecolor=DarkRed,urlcolor=white!0!blue!99]{hyperref}
+
+\usepackage{comment}
+\usepackage[vlined,boxed,commentsnumbered]{algorithm2e}
+\usepackage{multirow}
+\usepackage{hhline}
+
+\hyphenation{per-for-man-ce}
+
+\newcommand{\cre}[1]{\textcolor{red}{#1}}
+\newcommand{\ignore}[1]{} 
+\newcommand{\blasrout}[1]{\textbf{\texttt{#1}}}
+
+\def\normo#1{\|#1\|_{\infty}}
+
+\def\fqp{\texttt{FP128}\xspace}
+\def\fdp{\texttt{FP64}\xspace}
+\def\fsp{\texttt{FP32}\xspace}
+\def\fhp{\texttt{FP16}\xspace}
+\def\fhtp{\texttt{FP16-TC}\xspace}
+\def\ir{\texttt{IR}\xspace}
+\def\irgm{\texttt{IRGM}\xspace}
+
+\def\fspir{\texttt{FP32 IR}\xspace}
+\def\fhpir{\texttt{FP16 IR}\xspace}
+\def\fhtpir{\texttt{FP16-TC IR}\xspace}
+\def\fspirgm{\texttt{FP32 IRGM}\xspace}
+\def\fhpirgm{\texttt{FP16 IRGM}\xspace}
+\def\fhtpirgm{\texttt{FP16-TC IRGM}\xspace}
+
+\usepackage{xspace}
+\newcommand{\asgard}{ASGarD\xspace}
+\newcommand{\magma}{MAGMA\xspace}
+
+\begin{document}
+
+% propose titles
+\title{Boosting Performance of Physics Simulations up to $4\times$ through Mixed-precision Solvers	for GPU Tensor Cores
+%\thanks{This research was partially supported by the National Science Foundation under Grants OCI-1032815, ACI-1339822, and DOE under Grants DE-SC0004983 and DE-SC0010042, and Intel Corporation.}
+}
+\titlerunning{Boosting Performance through Mixed-precision Solvers}
+\toctitle{Boosting Performance through Mixed-precision Solvers}
+
+% Double blind - edit but leave in comment for now
+\begin{comment}
+\author{Azzam Haidar\inst{1}  \and David Green\inst{3}, Stanimire Tomov\inst{2}, Ed D'Azevedo\inst{3}, Wael Elwasif\inst{3}, Graham Lopez\inst{3}, Tyler McDaniel\inst{3}, Lin Mu\inst{3}\and \\ Jack Dongarra\inst{2,3,4}}
+\authorrunning{Haidar, Green, Tomov, D'Azevedo, Elwasif, Lopez, McDaniel, Mu, Dongarra}
+\tocauthor{Haidar, Green, Tomov, D'Azevedo, Elwasif, Lopez, McDaniel, Mu, Dongarra}
+\institute{NVIDIA USA, \and University of Tennessee, USA \and Oak Ridge National Laboratory, USA \and University of Manchester, UK}
+\end{comment}
+
+\maketitle
+
+\input{abs.tex}
+\input{intro.tex}
+\input{related.tex}
+\input{physics.tex}
+\input{algo.tex}
+\input{perf.tex}
+\input{concl.tex}
+
+% This is double blind - add acknowledgments but leave for now in comment
+\begin{comment}
+\section*{Acknowledgments}
+This research was supported by the Exascale Computing Project
+(17-SC-20-SC), a collaborative effort of the U.S. Department of Energy
+Office of Science and the National Nuclear Security Administration. The
+work was also partially supported by Nvidia and NSF grant No. OAC-1740250.
+\end{comment}
+
+%\bibliographystyle{plain}
+\bibliographystyle{splncs04}
+\bibliography{batched,magma,others,iter_ref,s7_mixed}
+
+\end{document}
+
+

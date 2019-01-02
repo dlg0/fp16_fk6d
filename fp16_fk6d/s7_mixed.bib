@@ -1,0 +1,569 @@
+@string{SISSC   = "SIAM J. Scientific and Statistical Computing"}
+@string{SINA    = "SIAM J. Numerical Analysis"}
+@string{SIMAX   = "SIAM J. Matrix Analysis and Applications"}
+@string{TOMS    = "ACM Trans. Math. Softw."}
+@string{SISC    = "SIAM J. Scientific Computing"}
+@string{NM      = "Numerische Mathematik"}
+@string{IJHPCA  = "Int. J. of High Performance Computing Applications"}
+
+
+Books on Linear Algebra
+====================================================================================================
+
+@article{yamazaki_2015,
+author = {Ichitaro Yamazaki and Stanimire Tomov and Jack Dongarra},
+title = {Mixed-Precision Cholesky QR Factorization and Its Case Studies on Multicore CPU with Multiple GPUs},
+journal = {SIAM Journal on Scientific Computing},
+volume = {37},
+number = {3},
+pages = {C307-C330},
+year = {2015},
+doi = {10.1137/14M0973773},
+URL = {http://dx.doi.org/10.1137/14M0973773},
+eprint = {http://dx.doi.org/10.1137/14M0973773}
+}
+
+@inproceedings{yamazaki_2014,
+  author    = {Ichitaro Yamazaki and
+               Stanimire Tomov and
+               Tingxing Dong and
+               Jack Dongarra},
+  title     = {Mixed-Precision Orthogonalization Scheme and Adaptive Step Size for
+               Improving the Stability and Performance of {CA-GMRES} on GPUs},
+  booktitle = {High Performance Computing for Computational Science - {VECPAR} 2014
+               - 11th International Conference, Eugene, OR, USA, June 30 - July 3,
+               2014, Revised Selected Papers (Best Paper Award)},
+  pages     = {17--30},
+  year      = {2014},
+  xcrossref = {DBLP:conf/vecpar/2014},
+  url       = {http://dx.doi.org/10.1007/978-3-319-17353-5_2},
+  doi       = {10.1007/978-3-319-17353-5_2},
+  timestamp = {Mon, 20 Apr 2015 18:55:36 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/vecpar/YamazakiTDD14},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@String{pub-SIAM                = "Society for Industrial and Applied
+                                   Mathematics"}
+@String{pub-SIAM:adr            = "Philadelphia, PA, USA"}
+@book{Higham_2002,
+  author = "Nicholas J. Higham",
+  title = "Accuracy and Stability of Numerical Algorithms",
+  publisher = pub-SIAM,
+  address =   pub-SIAM:adr,
+  edition = "Second",
+  year = 2002,
+  pages = "xxx+680",
+  doi = "10.1137/1.9780898718027",
+  isbn = "0-89871-521-0",
+  bibdate = "Mon Aug 19 13:30:30 GMT 2002",
+  created = "2002.08.19",
+  updated = "2014.05.30"
+        }
+
+@book{Bjorck_1996,
+	author = {{\AA}. {Bj\"orck}}, 
+	title = {Numerical Methods for Least Squares Problems}, 
+	publisher = {SIAM},
+	year = 1996
+}
+
+@BOOK{datta,
+    author      = {{Datta}, B.~D.},
+    title       = {Numerical Linear Algebra and Applications},
+    publisher   = {Brooks Cole Publishing Company},
+    year        = 1995
+}
+
+
+Iterative Refinement
+====================================================================================================
+
+@INPROCEEDINGS{gezh:03,
+    author = {Geddes, K. O. and Zheng, W. W.},
+    title = {Exploiting fast hardware floating point in high precision computation},
+    booktitle = {Proceedings of the 2003 international symposium on Symbolic and algebraic computation.  Philadelphia, PA, USA},
+    pages = {111--118},
+    year =  2003
+}
+
+@ARTICLE{Kurzak_2007_cell_linpack,
+    author      = {{Kurzak}, J. and {Dongarra}, J.~J.},
+    title       = {Implementation of Mixed Precision in Solving Systems of Linear Equations
+                   on the {C}ell Processor},
+    journal = {Concurrency Computat.: Pract. Exper.},
+    year = 2007,
+    volume = 19,
+    number = 10,
+    pages = {1371--1385}
+}
+
+@ARTICLE{Kurzak_2007_cell_cholesky,
+    author      = {{Kurzak}, J. and {Buttari}, A. and {Dongarra}, J.~J.},
+    title       = {Solving Systems of Linear Equations on the {CELL} Processor Using {C}holesky Factorization},
+    journal     = {IEEE Transactions on Parallel and Distributed Systems},
+    volume      = 19,
+    number      = 9,
+    year        = 2008,
+    month       = SEP,
+    pages       = {1--11}
+}
+
+
+====================================================================================================
+
+
+@ARTICLE{duff1983,
+AUTHOR = "I. S. Duff and J. K. Reid",
+TITLE = "The multifrontal solution of indefinite sparse symmetric linear
+		               equations",
+JOURNAL = TOMS,
+VOLUME = "9",
+NUMBER = "3",
+PAGES = "302-325",
+MONTH = SEP,
+YEAR = "1983"
+}
+
+@ARTICLE{ashcraft1987,
+AUTHOR = "C. Ashcraft and R. Grimes and J. Lewis and B. W. Peyton and H. Simon",
+TITLE = "Progress in sparse matrix methods in large sparse linear systems on vector supercomputers",
+JOURNAL = "Intern.~J.~of Supercomputer Applications",
+VOLUME = "1",
+PAGES = "10-30",
+YEAR = "1987"
+}
+
+
+@Article{amestoy2006,
+author =       {P. R. Amestoy and A. Guermouche and J.-Y. L'Excellent and S. Pralet},
+title =        {Hybrid scheduling for the parallel solution of linear systems},
+journal =      {Parallel Comput.},
+volume =       {32},
+pages =        {136-156},
+year =         {2006}
+}
+
+@Article{amestoy2001,
+author =       {P. R. Amestoy and I. S. Duff and J.-Y. L'Excellent and J. Koster},
+title =        {A fully asynchronous multifrontal solver using distributed dynamic scheduling},
+journal =      SIMAX,
+volume =       {23},
+pages =        {15-41},
+year =         {2001}
+}
+
+@ARTICLE{amestoy2000,
+AUTHOR = "P. R. Amestoy and I. S. Duff and J.-Y. L'Excellent",
+TITLE = "Multifrontal parallel distributed symmetric and unsymmetric solvers",
+JOURNAL = "Comput. Methods Appl. Mech. Eng.",
+VOLUME = "184",
+PAGES = "501-520",
+YEAR = "2000"
+}
+
+%DIST (parallel:MPI)
+@ARTICLE{li2003,
+AUTHOR = "X. S. Li and J. W. Demmel",
+TITLE = "{SuperLU\_DIST}: A scalable distributed-memory sparse direct solver for unsymmetric linear systems",
+JOURNAL = TOMS,
+VOLUME = "29",
+noNUMBER = "x",
+PAGES = "110-140",
+noMONTH = SEP,
+YEAR = "2003"
+}
+
+% MT (multi-threaded)
+@Article{demmel1999multithread,
+author =       {J. W. Demmel and J. R. Gilbert and X. S. Li},
+title =        {A asynchronous parallel supernodal algorithm for sparse Gaussian elimination},
+journal =      SIMAX,
+volume =       {20},
+number =       {3},
+pages =        {915-952},
+year =         {1999}
+}
+
+% sequential
+@Article{demmel1999seq,
+author =       {J. W. Demmel and S. C. Eisenstat and J. R. Gilbert and X. S. Li and J. W. H. Liu},
+title =        {A supernodal approach to sparse partial pivoting},
+journal =      SIMAX,
+volume =       {20},
+number =       {3},
+pages =        {720-755},
+year =         {1999}
+}
+
+@PHDTHESIS{li1996,
+AUTHOR = "X. S. Li",
+TITLE = "Sparse Gaussian Elimination on High Performance Computers",
+SCHOOL = "University of California at Berkeley",
+TYPE = "{C}omputer {S}cience {D}epartment",
+NOTE = "Ph.D. thesis (SuperLU software available at http://www.nersc.gov/~xiaoye/SuperLU/)",
+YEAR = "1996"
+}
+
+
+@ARTICLE{davis2004,
+AUTHOR = "T. A. Davis",
+TITLE = "A column pre-ordering strategy for the unsymmetric-pattern multifrontal method",
+JOURNAL = TOMS,
+VOLUME = "30",
+PAGES = "196-199",
+YEAR = "2004"
+}
+
+@Article{davis1997,
+author =       {T. A. Davis and I. S. Duff},
+title =        {An unsymmetric-pattern multifrontal method for sparse {LU} factorization},
+journal =      SIMAX,
+volume =       {18},
+pages =        {140-158},
+year =         {1997}
+}
+
+@ARTICLE{davis1999,
+AUTHOR = "T. A. Davis",
+TITLE = "A combined unifrontal/multifrontal method for unsymmetric sparse matrices",
+JOURNAL = TOMS,
+VOLUME = "25",
+PAGES = "1-19",
+YEAR = "1999"
+}
+
+@book{templates,
+    author = "Barrett, R. and Berry, M. and Chan, T. F. and Demmel, J. and Donato, J. M. and Dongarra, J. and Eijkhout, V. and Pozo, R. and Romine, C. and der Vorst, H. V.",
+    title = "Templates for the Solution of Linear Systems: Building Blocks for Iterative Methods.",
+    publisher = "Philadalphia: Society for Industrial and Applied Mathematics.",
+   note = "Also available as postscript file at http://www.netlib.org/templates/Templates.html",
+    year = "1994"
+}
+
+@book{saad_book,
+ author = {Y. Saad},
+ title = {Iterative Methods for Sparse Linear Systems},
+ year = {2003},
+ isbn = {0898715342},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+ }
+
+@article{Turner92,
+ author = {K. Turner and H. F. Walker},
+ title = {Efficient high accuracy solutions with {GMRES}(m)},
+ journal = {SIAM J. Sci. Stat. Comput.},
+ volume = {13},
+ number = {3},
+ year = {1992},
+ issn = {0196-5204},
+ pages = {815--825},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+ }
+
+@article{cg-vassilevski,
+ author = {O. Axelsson and P. S. Vassilevski},
+ title = {A black box generalized conjugate gradient solver with inner iterations and variable-step preconditioning},
+ journal = {SIAM J. Matrix Anal. Appl.},
+ volume = {12},
+ number = {4},
+ year = {1991},
+ issn = {0895-4798},
+ pages = {625--644},
+ doi = {http://dx.doi.org/10.1137/0612048},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+ }
+
+@article{ notay00flexible,
+  author = "Y. Notay",
+  title = "Flexible conjugate gradients",
+  journal = SISC,
+  volume = "22",
+  pages = "1444--1460",
+  year = "2000",
+  url = "citeseer.ist.psu.edu/article/notay00flexible.html" }
+
+@article{vuik-variable-GMRES,
+ author = {C. Vuik},
+ title = {New insights in {GMRES}-like methods with variable preconditioners},
+ journal = {J. Comput. Appl. Math.},
+ volume = {61},
+ number = {2},
+ year = {1995},
+ issn = {0377-0427},
+ pages = {189--204},
+ doi = {http://dx.doi.org/10.1016/0377-0427(94)00067-B},
+ publisher = {Elsevier Science Publishers B. V.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+ }
+
+@article{essg:03,
+  author = {J.~van~den~Eshof and G.~L.~G.~Sleijpen and M~.B.~van~Gijzen},
+  title = {Relaxation strategies for nested {K}rylov methods.},
+  journal = {Journal of Computational and Applied Mathematics},
+  volume = 177,
+  number = 2,
+  year = 2005,
+  pages = {347--365}
+}
+
+@Article{vandervorst91gmresr,
+  author = 	 {H. A. van der Vorst and C. Vuik},
+  title = 	 {{GMRESR}: a family of nested {GMRES} methods},
+  journal = 	 {Numerical Linear Algebra with Applications},
+  year = 	 {1994},
+  volume = 	 {1},
+  number = 	 {4},
+  pages = 	 {369-386}
+}
+
+@article{sparse_iterref,
+  author =       "A. Buttari and J. Dongarra and J. Kurzak and P. Luszczek and S. Tomov",
+  title =        "Using Mixed Precision for Sparse Matrix Computations to Enhance the Performance while Achieving 
+                 64-bit Accuracy",
+  journal =      TOMS,
+  volume =       "34",
+  number =       "4",
+  month =        jul,
+  year =         "2008",
+  pages =        "17",
+  note =         "Article 17, 22 pages",
+}
+
+@article{ypma:531,
+author = {T. J. Ypma},
+collaboration = {},
+title = {Historical Development of the {N}ewton--{R}aphson Method},
+publisher = {SIAM},
+year = {1995},
+journal = {SIAM Review},
+volume = {37},
+number = {4},
+pages = {531-551},
+keywords = {nonlinear equations; iteration; Newton--Raphson method; Isaac Newton; J. Raphson; Thomas Simpson},
+url = {http://link.aip.org/link/?SIR/37/531/1},
+doi = {10.1137/1037125}
+}
+
+
+@book{lapack:99,
+    Publisher = {SIAM},
+    Title = {{LAPACK}  {U}sers' {G}uide},
+    Author = {E. Anderson and Z. Bai and C. Bischof and S. Blackford 
+ and J. Demmel and J. Dongarra and J. Du Croz and
+                  A. Greenbaum and S. Hammarling and A. McKenney and
+                  D. Sorensen},
+    Edition = 3,
+    Year = {1999},
+    Address = {Philadelphia},
+}
+
+@article{blas01,
+author = {C. L. Lawson and R. J. Hanson and D. Kincaid and F. T. Krogh},
+title = {Basic Linear Algebra Subprograms for {FORTRAN} usage},
+journal = TOMS,
+volume = 5,
+year = 1979,
+pages = {308--323}
+}
+
+@article{blas02,
+author = {J. J. Dongarra and J. Du Croz and S. Hammarling and R. J. Hanson},
+title = {An extended set of {FORTRAN} Basic Linear Algebra Subprograms},
+journal = TOMS,
+volume = 14,
+year = 1988, 
+pages = {1--17}
+}
+
+@article{blas03,
+author = {J. J. Dongarra and J. Du Croz and S. Hammarling and R. J. Hanson},
+title = {Algorithm 656: An extended set of {FORTRAN} Basic Linear Algebra Subprograms},
+journal = TOMS,
+volume = 14,
+year = 1988, 
+pages = {18--32}
+}
+
+@article{blas04,
+author = {J. J. Dongarra and J. Du Croz and I. S. Duff and S. Hammarling},
+title  = {A set of Level 3 Basic Linear Algebra Subprograms},
+journal = TOMS,
+volume = 16,
+year = 1990, 
+pages = {1--17}
+}
+
+@article{blas05,
+author = {J. J. Dongarra and J. Du Croz and I. S. Duff and S. Hammarling},
+title = {Algorithm 679: A set of Level 3 Basic Linear Algebra Subprograms},
+journal = TOMS,
+volume = 16,
+year = 1990, 
+pages = {18--28}
+}
+
+@ARTICLE{1297653,
+  author = {A. Buttari and J. Dongarra and J. Langou and J. Langou and P. Luszczek and J. Kurzak},
+  title = {Mixed Precision Iterative Refinement Techniques for the Solution of Dense Linear Systems},
+  journal = IJHPCA,
+  volume = {21},
+  number = {4},
+  year = {2007},
+  issn = {1094-3420},
+  pages = {457--466},
+  doi = {http://dx.doi.org/10.1177/1094342007084026},
+  publisher = {Sage Publications, Inc.},
+  address = {Thousand Oaks, CA, USA},
+}
+
+@article{Arioli_1989,
+   author    = {M. Arioli and J.~W. Demmel and I.~S. Duff},
+   title     = {Solving sparse linear systems with sparse backward error},
+   journal   = SIMAX,
+   volume    = {10},
+   number = {2},
+   pages     = {165--190},
+   YEAR = {1989}
+}
+
+@article{Oettli_1964,
+   author    = {W. Oettli and W. Prager},
+   title     = {Compatibility of approximate solution of linear equations 
+with given error bounds for coefficients and right-hand sides},
+   journal   = NM,
+   volume    = {6},
+   pages     = {405--409},
+   YEAR = {1964}
+}
+
+@ARTICLE{Demmel_2006,
+AUTHOR = "J.~W. Demmel and Y. Hida and W. Kahan and X.~S. Li and S. Mukherjee and E.~J. Riedy",
+TITLE = "Error bounds from extra-precise iterative refinement",
+JOURNAL = TOMS,
+VOLUME = "32",
+NUMBER = "2",
+PAGES = "325-351",
+YEAR = "2006"
+}
+
+@article{Skeel_1980,
+   author    = {R.~D. Skeel},
+   title     = {Iterative refinement implies numerical stability for {G}aussian elimination},
+   journal   = {Math. Comput.},
+   volume    = 35,
+   number    = 151,
+   pages     = {817--832},
+   YEAR = {1980}
+}
+
+@article{Baboulin_2005,
+  AUTHOR = {M.~Baboulin and L.~Giraud and S.~Gratton},
+  TITLE = {A parallel distributed solver for large dense symmetric systems: 
+applications to geodesy and electromagnetism problems},
+  journal = IJHPCA,
+  volume    = {19},
+  number = {4},
+  pages     = {353--363},
+  YEAR = {2005}
+}
+
+@misc{magma0.2,
+  author = {S. Tomov and R. Nath and P. Du and J. Dongarra},
+  TITLE = {MAGMA version 0.2 Users' Guide},
+  year={2009},
+  institution = {Innovative Computing Laboratory, University of Tennessee}
+}
+
+@inproceedings{Tomov_2010_ipdps,
+        Address = {Atlanta, GA},
+        Author = {{Tomov}, S. and {Nath}, R. and {Ltaief}, H. and {Dongarra}, J.},
+        Booktitle = {Proc. of the IEEE IPDPS'10},
+        Month = {April 19-23},
+        Note = {{DOI:~10.1109/IPDPSW.2010.5470941}},
+        Pages = {1-8},
+        Publisher = {IEEE Computer Society},
+        Title = {Dense Linear Algebra Solvers for Multicore with {GPU} Accelerators},
+        Year = {2010}
+}
+
+
+@misc{MAGMA,
+key={Innovative Computing Laboratory at the University of Tennessee},
+title={Matrix Algebra on {GPU} and Multicore Architectures ({MAGMA})},
+note={Available at \url{http://icl.cs.utk.edu/magma/}},
+year=2018,
+}
+
+@article{itref_phys,
+title = "Accelerating scientific computations with mixed precision algorithms ",
+journal = "Computer Physics Communications ",
+volume = "180",
+number = "12",
+pages = "2526 - 2533",
+year = "2009",
+note = {{40 YEARS OF CPC: A celebratory issue focused on quality software for high performance, grid and novel computing architectures}},
+issn = "0010-4655",
+doi = "http://dx.doi.org/10.1016/j.cpc.2008.11.005",
+url = "http://www.sciencedirect.com/science/article/pii/S0010465508003846",
+author = "Marc Baboulin and Alfredo Buttari and Jack Dongarra and Jakub Kurzak and Julie Langou and Julien Langou and Piotr Luszczek and Stanimire Tomov",
+keywords = "Numerical linear algebra",
+keywords = "Mixed precision",
+keywords = "Iterative refinement "
+}
+
+@techreport{Demmel_2007,
+	author = {J.~W. Demmel and Y. Hida and X.~S. Li and E.~J. Riedy},
+	title = {Extra-precise iterative refinement for overdetermined 
+                 least squares problems}, 
+	year = 2007,
+        number = {EECS-2007-77},
+	institution = {UC Berkeley},
+        note = {Also LAPACK Working Note 188}
+}	
+
+
+@article{dongarra83_eig,
+title = "Improving the Accuracy of Computed Eigenvalues and Eigenvectors",
+author = "J. J. Dongarra and C. B. Moler and J. H. Wilkinson",
+journal = SINA,
+volume = 20,
+number = 1,
+pages = {23--45},
+month = FEB,
+year = 1983
+}
+
+@article{dongarra83_svd,
+title = "Improving the Accuracy of Computed Singular Values",
+author = {J. J. Dongarra},
+journal = SISSC,
+number = 4,
+volume = 4,
+pages = {712--719},
+month = DEC,
+year = 1983
+}
+
+@techreport{Arioli_Duff_2008,
+author = {M. Arioli and I. S. Duff},
+year = 2008,
+title = {Using FGMRES to obtain backward stability in mixed precision},
+number = {RAL-TR-2008-006},
+institution = {Rutherford Appleton Laboratory}
+}
+
+@article{Davis:2011,
+  author = "Timothy A. Davis and Yifan Hu",
+  title = "The {University of Florida Sparse Matrix Collection}",
+  journal = {ACM Trans. Math. Softw.},
+  volume = 38,
+  number = 1,
+  pages = "1:1-1:25",
+  year = 2011,
+  doi = "10.1145/2049662.2049663"
+        }
+} 

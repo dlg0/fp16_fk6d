@@ -1,0 +1,668 @@
+@book{hager2010introduction,
+  title={Introduction to High Performance Computing for Scientists and Engineers},
+  author={Hager, G. and Wellein, G.},
+  year={2011},
+  publisher={CRC Press}
+}
+
+@ARTICLE{McCalpin1995,
+  author = {John D. McCalpin},
+  title = {Memory Bandwidth and Machine Balance in Current High Performance
+  Computers},
+  journal = {IEEE Computer Society Technical Committee on Computer Architecture
+  (TCCA) Newsletter},
+  year = {1995},
+  pages = {19--25},
+  month = dec,
+  abstract = {The ratio of cpu speed to memory speed in current high-performance
+  computers is growing rapidly, with significant implications for the
+  design and implementation of algorithms in scientific computing.
+  I present the results of a broad survey of memory bandwidth and machine
+  balance for a large variety of current computers, including uniprocessors,
+  vector processors, shared-memory systems, and districuted-memory
+  systems. The results are analyzed in terms of the sustainable data
+  transfer rates for uncached unit-stride vector operation for each
+  machine, and for each class.},
+  pdf = {http://tab.computer.org/tcca/NEWS/DEC95/dec95_mccalpin.ps}
+}
+
+@ARTICLE{kurzak:2015:chol,
+author={Kurzak, J. and Anzt, H. and Gates, M. and Dongarra, J.},
+journal={Parallel and Distributed Systems, IEEE Transactions on},
+title={Implementation and Tuning of Batched Cholesky Factorization and Solve for NVIDIA GPUs},
+year={2015},
+volume={PP},
+number={99},
+pages={1-1},
+keywords={Graphics processing units;Instruction sets;Kernel;Linear systems;Niobium;Random access memory;Registers;CUDA;Cholesky factorization;GPU;SIM\
+T;batched;kernel},
+doi={10.1109/TPDS.2015.2481890},
+ISSN={1045-9219},
+month={},}
+
+@incollection{haidar:2015:qr,
+year={2015},
+booktitle={High Performance Computing},
+volume={9137},
+series={Lecture Notes in Computer Science},
+title={{A Framework for Batched and GPU-Resident Factorization Algorithms Applied to Block Householder Transformations}},
+author={Haidar, Azzam and Dong, Tingxing and Tomov, Stanimire and Luszczek, Piotr and Dongarra, Jack},
+pages={31-47},
+language={English}
+}
+
+@article{auer2006,
+  title={Automatic code generation for many-body electronic structure methods: the tensor contraction engine},
+  author={Auer, Alexander A and Baumgartner, Gerald and Bernholdt, David E and Bibireata, Alina and Choppella, Venkatesh and
+Cociorva, Daniel and Gao, Xiaoyang and Harrison, Robert and Krishnamoorthy, Sriram and Krishnan, Sandhya and Lam, Chi-Chung
+and Luc, Qingda and Nooijene, Marcel and Pitzerf, Russell and Ramanujamg, J and Sadayappanc, P and  Sibiryakovc, Alexander},
+  journal={Molecular Physics},
+  volume={104},
+  number={2},
+  pages={211--228},
+  year={2006},
+  publisher={Taylor \& Francis},
+}
+
+@inproceedings{Messer,
+author={Messer, O.E.B. and Harris, J.A. and Parete-Koon, S. and Chertkow, M.A.},
+year=2012,
+title={Multicore and Accelerator Development for a Leadership-Class Stellar Astrophysics Code},
+booktitle={Proceedings of "PARA 2012: State-of-the-Art in Scientific and Parallel Computing."},
+}
+
+@misc{poster,
+author={J.M. Molero and E.M. Garz\'{o}n and I. Garc\'{i}a and E.S. Quintana-Ort\'{i} and A. Plaza},
+title={Poster: A Batched {Cholesky} Solver for Local {RX} Anomaly Detection on {GPUs}},
+note={{PUMPS}},
+year=2013,
+}
+
+@inproceedings{batchedCholesky,
+author = "Dong, T. and Haidar, A. and Tomov, S. and Dongarra, J.",
+title = "A Fast Batched {Cholesky} Factorization on a {GPU}",
+institution = "Innovative Computing Laboratory, University of Tennessee",
+booktitle = "Proceedings of 2014 International Conference on Parallel Processing (ICPP-2014)",
+month = "September",
+year = "2014"
+} 
+
+@inproceedings{batchedLU,
+author = "Dong, T. and Haidar, A. and Luszczek, P. and Harris, A. and Tomov, S. and Dongarra, J.",
+title = {{LU Factorization of Small Matrices: Accelerating Batched DGETRF on the GPU}},
+booktitle = "Proceedings of 16th IEEE International Conference on High Performance and Communications",
+month = "August",
+year = "2014"
+}
+
+@book{Anderson:1999:lug,
+  author = {Edward Anderson and Zhaojun Bai and Christian Bischof and Suzan L. Blackford and James W. Demmel and Jack J. Dongarra and Jeremy Du Croz and Anne Greenbaum and Sven J. Hammarling and Alan McKenney and Danny C. Sorensen},
+  title = {{LAPACK User's Guide}},
+  edition = {{T}hird},
+  publisher = {Society for Industrial and Applied Mathematics},
+  address = {Philadelphia},
+  year = 1999,
+  isbn = {0-89871-447-8},
+}
+
+@incollection{REPEATED-gpu-gems,
+    title = {{Faster, Cheaper, Better -- a Hybridization Methodology
+               to Develop Linear Algebra Software for GPUs}},
+    author = {Agullo, Emmanuel and Augonnet, C{\'e}dric and Dongarra, Jack
+              and Ltaief, Hatem and Namyst, Raymond and Thibault, Samuel and
+              Tomov, Stanimire},
+    booktitle = {{GPU Computing Gems}},
+    publisher = {Morgan Kaufmann},
+    volume = {2},
+    editor = {Wen-mei W. Hwu },
+    year = {2010},
+    month = Sep,
+}
+
+@article{dynamic-magma,
+author = "Dongarra, J. and Haidar, A. and Kurzak, J. and Luszczek, P. and Tomov, S. and YarKhan, A.",
+title = "Model-Driven One-Sided Factorizations on Multicore Accelerated Systems",
+institution = "Innovative Computing Laboratory, University of Tennessee",
+journal = "International Journal on Supercomputing Frontiers and Innovations",
+volume = "1",
+number = "1",
+month = "June",
+year = "2014"
+} 
+
+@article{yamazaki2015,
+  author = "Ichitaro Yamazaki and Stanimire Tomov and Jack Dongarra",
+  title  = {Computing Low-rank Approximation of a Dense Matrix on Multicore CPUs with a 
+            GPU and its Application to Solving a Hierarchically Semiseparable Linear 
+            System of Equations},
+  institution = "Innovative Computing Laboratory, University of Tennessee",
+  journal = "Scientific Programming",
+  year = 2015,
+  month = Jan,
+  note  = {in Press, available at \url{http://www.hindawi.com/journals/sp/aip/246019/}}
+}
+
+@inproceedings{tim,
+author={Tingxing Dong and Veselin Dobrev and Tzanio Kolev and Robert Rieben and Stanimire Tomov and Jack Dongarra},
+title={A Step towards Energy Efficient Computing: Redesigning A Hydrodynamic Application on {CPU-GPU}},
+booktitle={IEEE 28th International Parallel Distributed Processing Symposium (IPDPS)},
+year=2014,
+}
+
+@misc{MAGMA,
+key={Innovative Computing Laboratory at the University of Tennessee},
+title={Matrix Algebra on {GPU} and Multicore Architectures ({MAGMA})},
+note={Available at \url{http://icl.cs.utk.edu/magma/}},
+year=2014,
+}
+
+@misc{magma1.6,
+key={Innovative Computing Laboratory at the University of Tennessee},
+title={Matrix Algebra on {GPU} and Multicore Architectures ({MAGMA}), {MAGMA Release 1.6.0}},
+note={Available at \url{http://icl.cs.utk.edu/magma/}},
+year=2014,
+}
+
+@misc{magma1.6flier,
+key={Innovative Computing Laboratory at the University of Tennessee},
+title={{MAGMA 1.6 Quick Reference Flier}},
+note={Available at \url{http://icl.cs.utk.edu/projectsfiles/magma/pubs/SC14-MAGMA.pdf}},
+year=2014,
+}
+
+
+@inproceedings{ichi,
+author={Ichitaro Yamazaki and Stanimire Tomov and Jack Dongarra},
+title={One-sided dense matrix factorizations on a multicore with multiple {GPU} accelerators in {MAGMA}},
+booktitle={International Conference on Computational Science ICCS},
+year=2012,
+}
+
+@ARTICLE{plasma-magma,
+author      = {{Agullo}, Emmanuel and {Demmel}, James and {Dongarra}, Jack and {Hadri}, Bilel and {Kurzak}, Jakub
+                            and {Langou}, Julien and {Ltaief}, Hatem and {Luszczek}, Piotr and {Tomov}, Stanimire},
+title       = {Numerical Linear Algebra on Emerging Architectures: {The} {PLASMA} and {MAGMA} projects},
+journal     = {J. Phys.: Conf. Ser.},
+year        = {2009},
+volume      = {180},
+number      = {1},
+pages       = {},
+}
+
+@article{Sparsity,
+ author = {Im, Eun-Jin and Yelick, Katherine and Vuduc, Richard},
+ title = {Sparsity: Optimization Framework for Sparse Matrix Kernels},
+ journal = {Int. J. High Perform. Comput. Appl.},
+ issue_date = {February  2004},
+ volume = {18},
+ number = {1},
+ month = feb,
+ year = {2004},
+ issn = {1094-3420},
+ pages = {135--158},
+ numpages = {24},
+ url = {http://dx.doi.org/10.1177/1094342004041296},
+ doi = {10.1177/1094342004041296},
+ acmid = {1080691},
+ publisher = {Sage Publications, Inc.},
+ address = {Thousand Oaks, CA, USA},
+ keywords = {memory hierarchy, performance tuning, sparse matrix},
+} 
+
+@techreport{Volkov:2008:factor,
+author={Vasily Volkov and James W. Demmel},
+title={{LU}, {QR} and {Cholesky} Factorizations using Vector Capabilities of {GPUs}},
+institution={University of California, Berkeley},
+number={UCB/EECS-2008-49},
+month={May 13},
+note={Also available as LAPACK Working Note 202},
+year=2008,
+}
+
+@inproceedings{batched-onesided,
+title = {Towards Batched Linear Solvers on Accelerated Hardware Platforms},
+booktitle = {Proceedings of the 20th ACM SIGPLAN Symposium on 
+              Principles and Practice of Parallel Programming},
+series = {PPoPP 2015},
+year = {2015},
+month = {02/2015},
+publisher = {ACM},
+organization = {ACM},
+address = {San Francisco, CA},
+author={Haidar, Azzam and Luszczek, Piotr and Tomov, Stanimire and Dongarra, Jack},
+}
+
+@inproceedings{batched-onesided-energy,
+title = {Optimization for Performance and Energy for Batched Matrix Computations on GPUs},
+booktitle = {8th Workshop on General Purpose Processing Using GPUs (GPGPU 8) co-located with PPOPP 2015},
+series = {PPoPP 2015},
+year = {2015},
+month = {02/2015},
+publisher = {ACM},
+organization = {ACM},
+address = {San Francisco, CA},
+author={Haidar, Azzam and Luszczek, Piotr and Tomov, Stanimire and Dongarra, Jack},
+}
+@article{haidar_ijhpca15,
+author = {Haidar, Azzam and Dong, Tingxing and Luszczek, Piotr and Tomov, Stanimire and Dongarra, Jack},
+title = {Batched matrix computations on hardware accelerators based on GPUs},
+year = {2015},
+journal = {International Journal of High Performance Computing Applications}
+}    
+
+
+
+
+@techreport{batch-api,
+  author = "Jack Dongarra and Iain Duff and Mark Gates and Azzam Haidar and
+            Sven Hammarling and Nicholas J. Higham and Jonathon Hogg
+            and Pedro Valero-Lara and Samuel D. Relton and Stanimire
+            Tomov and Mawussi Zounon",
+  title = "A Proposed {API} for {Batched Basic Linear Algebra Subprograms}",
+  institution =  "Manchester Institute for Mathematical
+                                   Sciences, The University of Manchester",
+  address =  "UK",
+  type =  "MIMS EPrint",
+  number = "2016.25",
+  year = 2016,
+  month = apr,
+  pages = 20,
+  url = "http://eprints.ma.man.ac.uk/2464/",
+  created = "2016.04.23",
+  updated = "2016.04.23"
+}
+
+@inproceedings{Tomov10,
+        Address = {Atlanta, GA},
+        Author = {{Tomov}, S. and {Nath}, R. and {Ltaief}, H. and {Dongarra}, J.},
+        Booktitle = {Proc. of the IEEE IPDPS'10},
+        Month = {April 19-23},
+        Note = {{DOI:~10.1109/IPDPSW.2010.5470941}},
+        Pages = {1-8},
+        Publisher = {IEEE Computer Society},
+        Title = {Dense Linear Algebra Solvers for Multicore with {GPU} Accelerators},
+        Year = {2010}
+}
+
+
+@article{1987,
+author={Gallivan, K. and Jalby, W. and Meier, U.},
+year=1987,
+title={The use of {BLAS3} in linear algebra on a parallel processor with a hierarchical memory},
+journal={SIAM J. Sci. Stat. Comp.},
+volume=8,
+note={10791084},
+}
+
+@article{1997,
+author={Gustavson, F. G.},
+title={Recursion leads to automatic variable blocking for dense linear-algebra algorithms},
+journal={IBM J. Res. Dev.},
+volume=41,
+number=6,
+pages={737-755},
+year=1997,
+unknwonNumber=737755,
+}
+
+@misc{guide,
+key={NVIDIA Corporation},
+title={CUDA Programming Guide v5.0},
+note={http://docs.nvidia.com/cuda/cuda-c-programming-guide/},
+}
+
+@misc{Guidry15,
+    author = {Brock, Benjamin and Belt, Andrew and Billings, Jay J. and Guidry, Mike},
+    citeulike-article-id = {13371583},
+    citeulike-linkout-0 = {http://arxiv.org/abs/1409.5826},
+    citeulike-linkout-1 = {http://arxiv.org/pdf/1409.5826},
+    day = {10},
+    eprint = {1409.5826},
+    keywords = {astrophysics, gpu},
+    month = jan,
+    posted-at = {2014-09-23 10:43:50},
+    priority = {2},
+    title = {{Explicit Integration with GPU Acceleration for Large Kinetic Networks}},
+    url = {http://arxiv.org/abs/1409.5826},
+    year = {2015}
+}
+
+@misc{k40,
+key={NVIDIA Corporation},
+title={http://www.nvidia.com/object/tesla-servers.html},
+}
+
+@article{HiTh99,
+author={W. Raphael and Friedrich-Karl},
+title={Silicon Burning {II}: Quasi-Equilibrium and Explosive Burning},
+journal={ApJ},
+volume=511,
+pages={862-875},
+month={February},
+year=1999,
+}
+
+@article{CyAmFe10,
+author={R. H. {Cyburt} and A.~M. {Amthor} and R.~{Ferguson} and Z.~{Meisel} and K.~{Smith} and
+  S.~{Warren} and A.~{Heger} and R.~D. {Hoffman} and T.~{Rauscher} and A.~{Sakharuk} and
+  H.~{Schatz} and F.~K. {Thielemann} and and M.~{Wiescher}},
+title= {The {JINA} {REACLIB} Database: Its Recent Updates and Impact on {Type-I} {X-ray} Bursts},
+journal={.},
+volume=189,
+pages={240-252},
+month={July},
+year=2010,
+}
+
+@misc{HSL,
+title={{HSL}. {A} collection of {Fortran} codes for large scale scientific computation},
+year=2013,
+note={\url{http://www.hsl.rl.ac.uk"}},
+}
+
+@inproceedings{Villa,
+author={Villa Oreste and Massimiliano Fatica and Nitin A. Gawande and Antonino Tumeo},
+year=2013,
+title={Power/Performance Trade-offs of Small Batched {LU} Based Solvers on {GPUs}},
+booktitle={19th International Conference on Parallel Processing, Euro-Par 2013},
+month={August 26-30},
+pages = {813-825},
+volume = 8097,
+series = {Lecture Notes in Computer Science},
+address={Aachen, Germany},
+}
+
+@inproceedings{Villa2,
+author={Villa Oreste and Nitin A. Gawande and Antonino Tumeo},
+year=2013,
+title={Accelerating Subsurface Transport Simulation on Heterogeneous Clusters},
+booktitle={IEEE International Conference on Cluster Computing (CLUSTER 2013)},
+month={September, 23-27},
+address={Indianapolis, Indiana},
+}
+
+@misc{WainwrightGTC13,
+author={Ian Wainwright},
+title={Optimized {LU}-decomposition with Full Pivot for Small Batched Matrices},
+note={GTC'13 -- ID S3069},
+year={April, 2013},
+url ={http://on-demand.gputechconf.com/gtc/2013/presentations/S3069-LU-Decomposition-Small-Batched-Matrices.pdf}
+}
+
+
+@misc{cublas,
+key={NVIDIA Corporation},
+title={{CUBLAS}},
+year = 2014,
+note={Available at \url{http://docs.nvidia.com/cuda/cublas/}},
+}
+
+@misc{cuda6.5,
+key={NVIDIA Corporation},
+title={{CUBLAS 6.5}},
+month = Jan,
+year = 2015,
+note={Available at \url{http://docs.nvidia.com/cuda/cublas/}},
+}
+
+
+@article{inverse,
+author={Du Croz and Jack J. Dongarra and N. J. Higham},
+title={Stability of methods for matrix inversion},
+journal={IMA J. Numer. Anal.},
+volume=12,
+number=119,
+year=1992,
+}
+
+@misc{mkl,
+key={Intel Corporation},
+title={Intel {M}ath {K}ernel {L}ibrary},
+year = 2016,
+note={Available at \url{http://software.intel.com}},
+}
+
+@misc{acml,
+key={AMD Corporation},
+title={{ACML - AMD Core Math Library}},
+year = 2014,
+note={Available at \url{http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml}},
+}
+
+@misc{sml,
+key={Intel Corporation},
+title={{Intel Pentium III Processor - Small Matrix Library}},
+year = 1999,
+note={Available at \url{http://www.intel.com/design/pentiumiii/sml/}},
+}
+
+@misc{Titan,
+author={Oak Ridge National Laboratory},
+title={Titan Supercomputer},
+note={\url{https://www.olcf.ornl.gov/support/system-user-guides/titan-user-guide/}},
+}
+
+
+@inproceedings{weaver12,
+author={V.M. Weaver and M.Johnson and K.Kasichayanula and J.Ralph and P.Luszczek and D.Terpstra and S.Moore},
+title={Measuring Energy and Power with {PAPI}},
+booktitle={41st International Conference on Parallel Processing Workshops},
+month={September},
+year=2012,
+}
+
+@INPROCEEDINGS{papi,
+    author = {Philip J. Mucci and Shirley Browne and Christine Deane and George Ho},
+    title = {PAPI: A Portable Interface to Hardware Performance Counters},
+    booktitle = {In Proceedings of the Department of Defense HPCMP Users Group Conference},
+    year = {1999},
+    pages = {7--10}
+}
+
+@inproceedings{Malony:2011,
+ author = {Malony, Allen D. and Biersdorff, Scott and Shende, Sameer and Jagode, Heike and Tomov, Stanimire and Juckeland, Guido and Dietrich, Robert and Poole, Duncan and Lamb, Christopher},
+ title = {Parallel Performance Measurement of Heterogeneous Parallel Systems with GPUs},
+ booktitle = {Proc. of ICPP'11},
+ year = {2011},
+ isbn = {978-0-7695-4510-3},
+ pages = {176--185},
+ numpages = {10},
+ doi = {10.1109/ICPP.2011.71},
+ acmid = {2066951},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {PAPI, Vampir, TAU, GPU, performance analysis},
+}
+@misc{rapl,
+key={Intel Corporation},
+title={Intel\textregistered\ 64 and {IA-32} Architectures Software Developer's Manual},
+note={Available at \url{http://download.intel.com/products/processor/manual/}},
+month={July 20},
+year=2014,
+}
+
+@article{Rotem:2012:rapl,
+author={Rotem, Efraim and  Naveh, Alon and Rajwan, Doron and Ananthakrishnan, Avinash and Weissmann, Eliezer},
+title={Power-Management Architecture of the Intel Microarchitecture Code-Named Sandy Bridge},
+journal={IEEE Micro},
+publisher={IEEE Computer Society},
+volume=32,
+number=2,
+month={March/April},
+pages={20-27},
+year=2012,
+note={ISSN: 0272-1732, \href{http://dx.doi.org/10.1109/MM.2012.12}{10.1109/MM.2012.12}},
+DateOfPublication={07 February 2012},
+DateOfCurrentVersion={03 April 2012 },
+}
+
+@techreport{YeralanDavisRanka,
+    author={Yeralan, Sencer N. and Davis, Tim A. and Ranka, Sanjay},
+    title={Sparse mulitfrontal {QR} on the {GPU}},
+    institution={University of Florida Technical Report},
+    year={2013},
+    url= {http://faculty.cse.tamu.edu/davis/publications_files/qrgpu_paper.pdf}
+}
+
+
+@misc{nvml,
+key={NVIDIA Corporation},
+year = 2014,
+title={Available at \url{https://developer.nvidia.com/nvidia-management-library-nvml}},
+}
+
+@inproceedings{preemptive,
+author={Jon Calhoun and Hai Jiang},
+title={Preemption of a CUDA Kernel Function},
+pages={247-252},
+year=2012,
+booktitle={13th ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing},
+}
+
+@misc{talk,
+author={NVIDIA Corporation},
+note={https://devtalk.nvidia.com/default/topic/527289/help-with-gpu-cholesky-factorization-/},
+}
+
+@inproceedings{eke,
+author={Anderson, M.J. and Sheffield, D. and Keutzer, K.},
+title={A Predictive Model for Solving Small Linear Algebra Problems in GPU Registers}, 
+year=2012,
+booktitle={IEEE 26th International Parallel Distributed Processing Symposium (IPDPS)},
+}
+
+@techreport{Hatem,
+author={Hatem Ltaief and Stanimire Tomov and Rajib Nath and Jack Dongarra},
+title={Hybrid Multicore Cholesky Factorization with Multiple GPU Accelerators},
+institution={University of Tennessee Computer Science Technical Report},
+year=2010,
+}
+
+@inproceedings{ncsa,
+author={Depeng Yang and Junqing Sun and JunKu Lee and Getao Liang and David D. Jenkins and Gregory D. Peterson and Husheng Li},
+title={Performance Comparison of Cholesky Decomposition on GPUs and FPGAs},
+booktitle={Symposium on Application Accelerators in High Performance Computing},
+year=2010,
+}
+
+@misc{mklRepeated,
+        title = "{Intel MKL Library}",
+  note = "{\url{http://www.intel.com/cd/software/products/asmo-na/eng/307757.htm}}"
+}
+
+@misc{openmp:2013:four,
+key={OpenMP Architecture Review Board},
+title={{OpenMP} Application Program Interface},
+note={Version 4.0},
+month={July},
+year=2013,
+}
+
+@misc{openacc:2011:one,
+key={OpenACC Corporation},
+title={The {OpenACC}\texttrademark\ Application Programming Interface Version 1.0},
+month={November},
+year=2011,
+}
+
+@misc{openacc:2013:twoadd,
+key={OpenACC Corporation},
+title={Proposed Additions for {OpenACC} 2.0, {OpenACC}\texttrademark\ Application Programming Interface},
+month={November},
+year=2012,
+}
+
+@inproceedings{Dongarra:2011:reclupanel,
+title={Exploiting Fine-Grain Parallelism in Recursive {LU} Factorization},
+author={Jack Dongarra and Mathieu Faverge and Hatem Ltaief and Piotr Luszczek},
+booktitle={ParCo 2011 -- International Conference on Parallel Computing},
+address={Ghent, Belgium},
+month={August 30-September 2},
+year=2011,
+}
+
+@article{Dongarra:2012:reclu,
+  author={Jack Dongarra and Mathieu Faverge and Hatem Ltaief and Piotr Luszczek},
+  title={Exploiting Fine-Grain Parallelism in Recursive {LU} Factorization},
+  pages={429-436},
+  editor={Koen De Bosschere and Erik H. D'Hollander and Gerhard R. Joubert and David Padua and Frans Peters and Mark Sawyer},
+  journal={Advances in Parallel Computing, Special Issue},
+  series={Applications, Tools and Techniques on the Road to Exascale Computing},
+  volume=22,
+  year=2012,
+  note={ISBN   978-1-61499-040-6 (print); ISBN   978-1-61499-041-3 (online)},
+}
+
+@inproceedings{Luszczek:2012:reclu_ipad,
+author={Piotr Luszczek and Jack Dongarra},
+title={Anatomy of a Globally Recursive Embedded {LINPACK} Benchmark},
+booktitle={Proceedings of 2012 IEEE High Performance Extreme Computing Conference (HPEC 2012)},
+address={Westin Hotel, Waltham, Massachusetts},
+month={September 10-12},
+year=2012,
+note={IEEE Catalog Number: CFP12HPE-CDR, ISBN: 978-1-4673-1574-6},
+}
+
+@article{halko11,
+        Author = {N. Halko and P. Martisson and J. Tropp},
+        Journal = {SIAM Review},
+        Pages = {217--288},
+        Title = {Finiding Structure with Randomness: Probabilistic Algorithms for Constructing Approximate Matrix Decompositions},
+        Volume = 53,
+        Year = 2011,
+}
+
+@Book{Golub12,
+  author =       "G. Golub and C. van Loan",
+  title =        "Matrix Computations",
+  publisher =    "The Johns Hopkins University Press",
+  address =      "Baltimore, {MD}",
+  edition =      "4th",
+  year =         "2012"
+}
+
+@ARTICLE{Gustafson_1988_cacm,
+    author      = {{Gustafson}, J.~L.},
+    title       = {Reevaluating {Amdahl's} Law},
+    journal     = {Communications of the ACM},
+    year        = 1988,
+    volume      = 31,
+    number      = {5},
+    pages       = {532-533},
+}
+
+@misc{olcf:2014:arep,
+  author={Oak Ridge Leadership Computing Facility},
+  title={Annual Report 2013-2014},
+  note={\url{https://www.olcf.ornl.gov/wp-content/uploads/2015/01/AR_2014_Small.pdf}},
+  year=2014,
+}
+
+
+
+@misc{nvvp,
+  key={NVIDIA Corporation},
+  title={NVIDIA Visual Profiler},
+  url  ={https://developer.nvidia.com/nvidia-visual-profiler}
+}
+@book{national2011The,
+    author = {Fuller, S. H. and Millett, L. I.},
+    citeulike-article-id = {11601246},
+    keywords = {tier2\_charm, tier2\_mpgpu},
+    posted-at = {2012-11-07 01:47:57},
+    priority = {2},
+    isbn={9780309159517},
+    url={http://www.nap.edu/openbook.php?record_id=12980},
+    publisher = {National Academy Press},
+    title = {{The Future of Computing Performance: Game Over Or Next Level?}},
+    year = {2011}
+}
+
+@inproceedings{ahtd15,
+    author = {Ahmad Abdelfattah and Azzam Haidar and Stanimire Tomov and Jack Dongarra},
+    booktitle = {The International Supercomputing Conference (ISC High Performance 2016)},
+    title     = {{Performance, Design, and Autotuning of Batched GEMM for GPUs}},
+    year = {2016},
+    month = {06},
+    address = {Frankfurt, Germany}
+}
